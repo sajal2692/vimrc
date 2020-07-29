@@ -47,7 +47,8 @@ nmap <C-n> <Plug>yankstack_substitute_newer_paste
 let g:ctrlp_working_path_mode = 0
 
 " Quickly find and open a file in the current working directory
-let g:ctrlp_map = '<C-f>'
+" Sajal: Keep the default mapping fot CtrlP
+" let g:ctrlp_map = '<C-f>'
 map <leader>j :CtrlP<cr>
 
 " Quickly find and open a buffer
@@ -65,13 +66,6 @@ let g:ctrlp_custom_ignore = 'node_modules\|^\.DS_Store\|^\.git\|^\.coffee'
 """"""""""""""""""""""""""""""
 " Enable all functions in all modes
 let g:user_zen_mode='a'
-
-
-""""""""""""""""""""""""""""""
-" => snipMate (beside <TAB> support <CTRL-j>)
-""""""""""""""""""""""""""""""
-ino <C-j> <C-r>=snipMate#TriggerSnippet()<cr>
-snor <C-j> <esc>i<right><C-r>=snipMate#TriggerSnippet()<cr>
 
 
 """"""""""""""""""""""""""""""
@@ -140,15 +134,6 @@ let g:lightline = {
       \ 'separator': { 'left': ' ', 'right': ' ' },
       \ 'subseparator': { 'left': ' ', 'right': ' ' }
       \ }
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Vimroom
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:goyo_width=100
-let g:goyo_margin_top = 2
-let g:goyo_margin_bottom = 2
-nnoremap <silent> <leader>z :Goyo<cr>
-
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Ale (syntax checker and linter)
